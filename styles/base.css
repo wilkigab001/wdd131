@@ -5,13 +5,13 @@
  }
 
  nav {
-    background-color: #333;
+    background-color: #002E5D;
   }
   
   nav ul {
     display: flex;
     list-style: none;
-    justify-content: center;
+    justify-content: space-evenly;
     gap: 20px;
     padding: 15px;
   }
@@ -26,6 +26,35 @@
   
   /* Hover effect */
   nav a:hover {
-    background-color: #ffcc00;
-    color: #333;
+    background-color: #0062B8;
+    color: white;
   }
+
+  h1{
+    text-align: center;
+    padding: 10px;
+  }
+
+
+  footer {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    height: 75px; /* Adjust height as needed */
+    text-align: center; /* Ensures text inside <p> is centered */
+    color: white;
+    background-color: #002E5D;
+}
+
+.Name-Footer{
+  font-size: 20px;
+}
+
+.container {
+    padding-top: 10px;
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    gap: 10px; /* Adds space between the two <p> tags */
+}
