@@ -123,3 +123,7 @@ footer {
 .align-image-right img, .align-image-left img {
   margin-right: 20px; /* Adds space between image and text */
 }
+
+img{
+  height: 200px;
+}
