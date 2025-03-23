@@ -3,10 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Temple Gallery</title>
-    <meta name="Description" content="Country Page">
+    <title>Country Page</title>
+    <meta name="Description" content="Country Page, design for mobile and laptop">
     <meta name="author" content="Gabriel Wilkins">
     <link rel="stylesheet" href="styles/place.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="scripts/place.js" defer></script>
+    <script src="scripts/getdates.js"></script>
 </head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Mexico</h1>
+        </header>
+
+        <div class="hero">
+            <picture>
+                <source srcset="images/mexico-flag-md.webp" media="(min-width: 768px)">
+                <source srcset="images/mexico-flag-sm.webp" media="(min-width: 480px)">
+                <!--<img src="images/mexico-flag-sm.webp" alt="Hero Image">-->
+            </picture>
+        </div>
+
+        <section class="data">
+            <h2>Data</h2>
+            <p>Area: 761,600 sq mi</p>
+            <p>Population: 129,700,000</p>
+            <p>Capital: Mexico City</p>
+            <p>Languages: Spanish</p>
+            <p>Currency: Peso</p>
+            <p>Time Zone: GMT -6</p>
+            <p>Internet TLD: .mx</p>
+        </section>
+
+        <section class="weather">
+            <h2>Weather</h2>
+            <img src="images/weather-icon.svg" alt="Weather Icon">
+            <p>Temperature: Value</p>
+            <p>Conditions: Value</p>
+            <p>Wind: Value</p>
+            <p>Wind Chill: <span id="wind-chill">N/A</span></p>
+        </section>
+
+            <footer>
+                <p class="Name-Footer">
+                    <span id="currentyear"></span>
+                    Gabriel Wilkins
+                    Utah, United States
+                </p>
+                <div class="container">
+                    <p>Last Modification:</p>
+                    <p id="lastmodified"></p>
+                </div>
+            </footer>
+    </div>
+</body>
+
+</html>
