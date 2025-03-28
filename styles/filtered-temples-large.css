@@ -1,0 +1,46 @@
+/* Show Menu on Desktop */
+@media (min-width: 768px) {
+    nav ul {
+        display: flex;
+        gap: 15px;
+    }
+
+    nav ul li {
+        display: inline;
+        padding: 10px 20px;
+    }
+
+    #hamburger-btn {
+        display: none; /* Hide hamburger menu */
+    }
+
+    main {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    nav ul li a:hover {
+        background-color: white; 
+        color: black;
+        border-radius: 5px;
+    }
+
+    .grid-container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* Three columns */
+        gap: 20px;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    figure {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    figure img {
+        width: 200px;
+        border-radius: 10px;
+        height: 100px;
+    }
+}
