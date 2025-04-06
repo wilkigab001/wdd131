@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gabriel Wilkins, WDD 131 - Dynamic Web Fundamentals, Product Review Form">
+    <meta name="author" content="Gabriel Wilkins">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+    <script src="scripts/form.js" defer></script>
+    <title>Review</title>
+</head>
+<body>
+    <h1>Thank you for submitting your review!</h1>
+    <p id="reviewCounter"></p>
+  
+    <footer>
+      <p>&copy; 2025 Product Reviews Inc.</p>
+    </footer>
+  
+    <script>
+      let reviewCount = localStorage.getItem("reviewCount");
+      reviewCount = reviewCount ? parseInt(reviewCount) + 1 : 1;
+      localStorage.setItem("reviewCount", reviewCount);
+      document.getElementById("reviewCounter").textContent = `You have submitted ${reviewCount} review(s).`;
+    </script>
+  </body>
+</html>

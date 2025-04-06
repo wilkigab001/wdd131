@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gabriel Wilkins, WDD 131 - Dynamic Web Fundamentals, Product Review Form">
+    <meta name="author" content="Gabriel Wilkins">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+    <script src="scripts/form.js" defer></script>
+    <title> Product Review Form</title>
+</head>
+<body>
+    <header>
+        <h1>Product Review Form</h1>
+    </header>
+    <main>
+        <form action="review.html" method="get">
+            <label for="productName">Product Name</label>
+            <select name="productName" id="productName" required>
+                <option value="">Choose a Product</option>
+            </select>
+
+            <label>Overall Rating:</label>
+            <div class="rating">
+                <label><input type="radio" name="rating" value="1" required> 1 ☆</label>
+                <label><input type="radio" name="rating" value="2"> 2 ☆</label>
+                <label><input type="radio" name="rating" value="3"> 3 ☆</label>
+                <label><input type="radio" name="rating" value="4"> 4 ☆</label>
+                <label><input type="radio" name="rating" value="5"> 5 ☆</label>
+            </div>
+
+            <label for="installDate">Date Of Installation</label>
+            <input type="date" id="installDate" required name="installDate">
+
+            <label for="usefulFeatures">Useful Features</label>
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="features" value="Fast Charging">Durability</label>
+                <label><input type="checkbox" name="features" value="Durable">Ease of Use</label>
+                <label><input type="checkbox" name="features" value="Energy Efficient"> Performance</label>
+                <label><input type="checkbox" name="features" value="Design">Design</label>
+            </div>
+            
+            <label for="review">Written Review(optional)</label>
+            <textarea name="review" id="review" rows="4"></textarea>
+
+            <label for="Name">Your Name (optional)</label>
+            <input type="text" id="Name" name="Name">
+
+            <input type="submit" value="Submit Review">
+        </form>
+    </main>
+    <footer></footer>
+</body>
