@@ -145,3 +145,4 @@ const temples = [
   });
 
   displayTemples(temples);
+
