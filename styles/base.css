@@ -3,7 +3,10 @@ body{
     padding: 0;
     line-height:1.6;
     background-color: #f9f9f9;
-    color:#333
+    color:#333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header {
@@ -20,21 +23,17 @@ header {
   margin-bottom: 0.5rem;
 }
 
-
-nav ul{
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    gap: 1.5rem;
+nav {
+  display: flex;
+  justify-content: space-around; 
+  align-items: center;
+  gap: 1.5rem;
 }
-
-li {
-    list-style-type: none;
-    width: 100%;
-    height: 100%;
-    border: white;
+nav a {
+  text-decoration: none;
+  color: black;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
 }
 
 a {
@@ -44,7 +43,7 @@ a {
     border-radius: 10px;
 }
 
-nav li:hover{
+nav a:hover{
     background-color: white;
     color: #004466;
     border-radius: 10px;
@@ -53,4 +52,28 @@ nav li:hover{
 main{
     align-items: center;
     width: 80%;
+    display: grid;
+    margin: 2rem auto;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+main h1{
+    grid-column: 1 / -1;
+    text-align: center;
+}
+
+.card {
+    background: white;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,.1);
+    border: 1px solid black;
+}
+
+footer {
+    background-color: #004466;
+    color: white;
+    padding: 1rem;
+    text-align: center;
 }
