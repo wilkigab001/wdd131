@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Gabriel Wilkins</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals, Gabriel Wilkins, Country Page of WDD 131 Project">
+    <meta name="author" content="Gabriel Wilkins">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/places-large.css" media="screen and (min-width: 768px)">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Epunda+Slab:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <h1>USA</h1>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img src="images/AmericaFlag.webp" alt="Place image" class="hero-img">
+    </section>
+
+    <section class="data">
+        <h2>Data</h2>
+        <ul>
+            <li><span class="label">Area:</span> <span class="value">3,797,000 sq mi</span></li>
+            <li><span class="label">Population:</span> <span class="value">334,000,000</span></li>
+            <li><span class="label">Languages:</span> <span class="value">English</span></li>
+            <li><span class="label">Currency:</span> <span class="value">Us Dollar</span></li>
+            <li><span class="label">Time Zone:</span> <span class="value">Eastern/ Hawaii-Aleutian</span></li>
+            <li><span class="label">Calling Code:</span> <span class="value">+1</span></li>
+            <li><span class="label">Internet TLD:</span> <span class="value">.us</span></li>
+        </ul>
+    </section>
+
+    <section class="weather">
+        <h2>Weather</h2>
+        <img src="images/8726475_sun_icon.svg" alt="Weather icon" class="weather-icon" width="50%" style="text-align: center;">
+        <ul>
+            <li><span class="label">Temperature:</span> <span class="value">Value</span></li>
+            <li><span class="label">Conditions:</span> <span class="value">Value</span></li>
+            <li><span class="label">Wind:</span> <span class="value">Value</span></li>
+            <li><span class="label">Wind Chill:</span> <span class="value">Value</span></li>
+        </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Standard Footer content – &copy; 2025 Gabriel Wilkins – Location</p>
+    <p>Last modified: <span id="lastModified"></span></p>
+  </footer>
+
+  <script src="scripts/place.js" defer>
+    document.getElementById("lastModified").textContent = document.lastModified;
+  </script>
+</body>
+</html>

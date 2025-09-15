@@ -1,0 +1,32 @@
+/* Larger screens layout (≥768px) */
+main {
+  display: grid;
+  grid-template-areas:
+    "hero hero hero"
+    "data hero weather"
+    "footer footer footer";
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 1rem;
+  margin: 1rem;
+}
+
+.hero {
+  grid-area: hero;
+}
+
+.hero-img {
+  width: 100%;
+}
+
+.data {
+  grid-area: data;
+}
+
+.weather {
+  grid-area: weather;
+  text-align: center;
+}
+
+footer {
+  grid-area: footer;
+}
