@@ -1,10 +1,9 @@
-/* Larger screens layout (≥768px) */
+
 body {
   margin: 0;
   padding: 0;
 }
 
-/* Enhanced styling using CSS variables */
 .data h2::after {
   content: " 📊";
   font-size: 0.8em;
@@ -83,23 +82,18 @@ main {
   height: 60px;
   margin: 1rem auto;
 }
-
-/* Remove margin from sections in desktop layout - they're now positioned absolutely */
 .data,
 .weather {
   margin: 0;
   padding: 1.5rem;
   border-radius: 12px;
 }
-
-/* Footer spans full width below the main content */
 footer {
   margin: 1rem;
   margin-top: 2rem;
   background: var(--primary-color);
 }
 
-/* Additional media query for very large screens */
 @media screen and (min-width: 1200px) {
   main {
     max-width: 1400px;
