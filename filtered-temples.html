@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Gabriel Wilkins</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals, Gabriel Wilkins, Home Page of WDD 131 Project">
+    <meta name="author" content="Gabriel Wilkins">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epunda+Slab:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Temple album</h1>
+        <nav>
+            <button class="hamburger" id="hamburger">&#9776;</button>
+            <div class="nav-links" id="nav-links">
+            <a href="#" id="home">Home</a>
+            <a href="#" id="old">Old</a>
+            <a href="#" id="new">New</a>
+            <a href="#" id="large">Large</a>
+            <a href="#" id="small">Small</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h2>Temples</h2>
+        <div id="temple-container"></div>
+    </main>
+     <footer>
+        <p><span id="currentyear"></span> </p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/filtered-temples.js" defer></script>
+</body>
+
+</html>
