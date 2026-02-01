@@ -13,7 +13,9 @@
 
 </head>
 <body>
+    <header>
         <h1>Product Review Form</h1>
+    </header>
     
     <form method="get" action="review.html">
         <!-- Product Name -->
@@ -62,23 +64,23 @@
             <label>Useful Features:</label>
             <div class="checkbox-group">
                 <div class="checkbox-option">
-                    <input type="checkbox" id="feature1" name="features" value="Easy to Use">
+                    <input type="checkbox" id="feature1" name="features" value="Easy to Use" required>
                     <label for="feature1">Easy to Use</label>
                 </div>
                 <div class="checkbox-option">
-                    <input type="checkbox" id="feature2" name="features" value="Durable">
+                    <input type="checkbox" id="feature2" name="features" value="Durable" required>
                     <label for="feature2">Durable</label>
                 </div>
                 <div class="checkbox-option">
-                    <input type="checkbox" id="feature3" name="features" value="Energy Efficient">
+                    <input type="checkbox" id="feature3" name="features" value="Energy Efficient" required>
                     <label for="feature3">Energy Efficient</label>
                 </div>
                 <div class="checkbox-option">
-                    <input type="checkbox" id="feature4" name="features" value="Good Value">
+                    <input type="checkbox" id="feature4" name="features" value="Good Value" required>
                     <label for="feature4">Good Value</label>
                 </div>
                 <div class="checkbox-option">
-                    <input type="checkbox" id="feature5" name="features" value="Quiet Operation">
+                    <input type="checkbox" id="feature5" name="features" value="Quiet Operation" required>
                     <label for="feature5">Quiet Operation</label>
                 </div>
             </div>
@@ -97,9 +99,11 @@
         </div>
         
         <!-- Submit Button -->
-        <div class="form-group">
-            <input type="submit" value="Submit">
-        </div>
+         <footer>
+             <div class="form-group">
+                 <input type="submit" value="Submit">
+             </div>
+         </footer>
     </form>
     <script src="scripts/form.js" defer></script>
 </body>
