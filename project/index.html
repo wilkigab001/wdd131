@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Provo Mountain Biking - Find the best trails and connect with local riders">
+    <title>Provo Mountain Biking - Home</title>
+    <link rel="stylesheet" href="/project/styles/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <h1 class="logo">Provo MTB</h1>
+                <button class="hamburger" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="trails.html">Trails</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Discover Provo's Best Mountain Biking Trails</h2>
+                <p>Join our community of riders and explore the incredible trails around Provo, Utah</p>
+                <a href="trails.html" class="cta-button">Explore Trails</a>
+            </div>
+        </section>
+
+        <section class="welcome">
+            <div class="container">
+                <h2>Welcome to Provo Mountain Biking</h2>
+                <p>Whether you're a beginner or an experienced rider, Provo offers some of the best mountain biking in Utah. Our community is here to help you find the perfect trail and connect with fellow riders.</p>
+                
+                <div class="features">
+                    <div class="feature-card">
+                        <h3>Find Trails</h3>
+                        <p>Browse and rate local trails based on difficulty, length, and rider reviews.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Connect</h3>
+                        <p>Join our riding groups and meet other mountain bikers in the Provo area.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Share</h3>
+                        <p>Rate trails and share your experiences to help other riders.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-trails">
+            <div class="container">
+                <h2>Featured Trails</h2>
+                <div class="trail-preview" id="featured-trails-container">
+                    <!-- Populated by JavaScript -->
+                </div>
+                <a href="trails.html" class="view-all-link">View All Trails →</a>
+            </div>
+        </section>
+
+        <section class="stats">
+            <div class="container">
+                <div class="stat-grid">
+                    <div class="stat-item">
+                        <h3 id="total-trails">6</h3>
+                        <p>Trails</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3 id="total-reviews">0</h3>
+                        <p>Reviews</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>4.5</h3>
+                        <p>Avg Rating</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Provo Mountain Biking. All rights reserved.</p>
+            <p><a href="references.html">References</a></p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/home.js"></script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore and rate mountain biking trails in Provo, Utah">
+    <title>Trails - Provo Mountain Biking</title>
+    <link rel="stylesheet" href="/project/styles/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <h1 class="logo">Provo MTB</h1>
+                <button class="hamburger" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="trails.html" class="active">Trails</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h2>Provo Mountain Biking Trails</h2>
+                <p>Explore, rate, and review the best trails in the area</p>
+            </div>
+        </section>
+
+        <section class="trails-section">
+            <div class="container">
+                <div class="filters">
+                    <div class="filter-group">
+                        <label for="difficulty-filter">Difficulty:</label>
+                        <select id="difficulty-filter">
+                            <option value="all">All Levels</option>
+                            <option value="beginner">Beginner</option>
+                            <option value="intermediate">Intermediate</option>
+                            <option value="advanced">Advanced</option>
+                        </select>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <label for="sort-filter">Sort By:</label>
+                        <select id="sort-filter">
+                            <option value="name">Name</option>
+                            <option value="rating-high">Rating (High to Low)</option>
+                            <option value="rating-low">Rating (Low to High)</option>
+                            <option value="difficulty">Difficulty</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="trails-grid" id="trails-container">
+                    <!-- Populated by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Trail Detail Modal -->
+        <div id="trail-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div id="modal-body">
+                    <!-- Populated by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Provo Mountain Biking. All rights reserved.</p>
+            <p><a href="references.html">References</a></p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/trails.js"></script>
+</body>
+</html>
